@@ -1,9 +1,10 @@
 .wrapper {
-    position: relative;
+    padding-top: 80px;
+    position: absolute;
     width: 400px;
     height: 450px;
     background: rgba(255, 255,255, .15);
-    box-shadow:  0 8px 32px rgba(31, 38,135, .37);
+    box-shadow: 0 8px 32px rgba(31, 38,135, .37);
     border: 1px solid rgba(255, 255,255, .18);
     border-radius: 20px;
     display: flex;
@@ -21,11 +22,7 @@ body {
  }
  
 
-h2{
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
-}
+
 
 .input-box{
     position: relative;
@@ -34,12 +31,12 @@ h2{
     border-bottom: 2px solid #fff;
 }
 
-.input-box label{
-    position:absolute;
+.input-box label {
+    position: absolute;
     top: 50%;
     left: 5px;
     transform: translateY(-50%);
-    font-size: 1em;
+    font-size: 1.5em;
     pointer-events: none;
     color: #fff;
     transition: .5s;
@@ -56,9 +53,9 @@ h2{
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #fff;
-    padding: 0 35px 0 5px;
+    padding: 20px 35px 0 5px;
 }
 
 .input-box .icon {
@@ -78,60 +75,59 @@ h2{
     justify-content: space-between;
 }
 
-.remember-forgot a{
+.remember-forgot a {
+    font-size: 1.1em;
     color: #fff;
     text-decoration: none;
 }
-
 .remember-forgot a:hover{
     text-decoration: underline;
 }
 
-.remember-forgot label input{
-    accent-color: #fa709a;
+.remember-forgot label input {
+    accent-color: #000000;
     margin-right: 3px;
 }
 
 button {
     width: 100%;
     height: 45px;
-    background: #fa709a;
+    background: #333333;
     border: none;
     outline: none;
     border-radius: 40px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.3em;
     color: #fff;
     font-weight: 500;
+        /* Añadimos una sombra alrededor del botón */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        /* Añadimos una transición para que la animación sea suave */
+        transition: box-shadow 0.3s;
 }
 
-.register-link{
-    font-size: .9em;
+button:hover {
+    /* Cambiamos la sombra cuando se pasa el mouse */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.register-link p {
+    font-size: 1em;
     text-align: center;
     color: #fff;
     margin: 25px 0 10px;
-}
-
-.register-link p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.register-link p a:hover {
-    text-decoration: underline;
 }
 
 .blob {
     position: absolute;
     width: 500px;
     height: 500px;
-    background: linear-gradient(180deg, rgba(47, 184, 255, .42) 31.77%, #5c9df1 100%);
+    background: linear-gradient(180deg, rgb(255 112 47) 31.77%, #ffb400 100%);
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
     transform: translate(-100px, -50px)rotate(-90deg);
     transition: 1s cubic-bezier(.07, .8, .16, 1);
     animation: animateBlob 20s infinite alternate;
-}    
+} 
 
 .blob:hover{
     width: 520px;
@@ -139,9 +135,9 @@ button {
     filter: blur(30px);
     box-shadow: 
                 inset 0 0 0 5px rgba(255, 255,255, .6),
-                inset 100px 100px 0 0 #fa709a,
-                inset 200px 200px 0 0 #784ba8,
-                inset 300px 300px 0 0 #2b86c5;
+                inset 100px 100px 0 0 #fb3600,
+                inset 200px 200px 0 0 #fb6400,
+                inset 300px 300px 0 0 #fbb800;
 }
 
 @keyframes animateBlob {
@@ -150,3 +146,16 @@ button {
         border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
     }
 }
+
+.logo {
+    position: absolute;
+    bottom: 355px;
+    right: 625px;
+    background-image: url(http://localhost:3000/static/media/logo.6f47c1f95f8d3710f100.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+}
+

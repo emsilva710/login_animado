@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Dosis", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
@@ -12,8 +14,23 @@ body {
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   background-color: #1F1F47;
+    background: linear-gradient(45deg, #ffc400, #ff8000, #FFB300);
+    background-size: 400% 400%;
+    animation: wave 8s ease infinite;
+
    overflow: hidden;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 code {

@@ -1,23 +1,26 @@
 import React from 'react';
 import './LoginForm.css';
-import { MdEmail } from "react-icons/md";
-import { GiPadlock } from "react-icons/gi";
+import { PiUserFill } from "react-icons/pi";
+import { IoLockClosed } from "react-icons/io5";
+
+
 
 const LoginForm = () => {
   return (
     <body>
         <div className='blob'></div>
-
+        <div className='logo'> </div>
         <div className='wrapper'>
         <form action="">
-            <h2>Login</h2>
+       
+          
             <div className='input-box'>
-                <MdEmail className='icon' />
-                <input type="email" required/>
-                <label>Email</label>
+                <PiUserFill className='icon' />
+                <input type="text" required/>
+                <label>Usuario</label>
             </div>
             <div className='input-box'>
-                <GiPadlock className='icon' />
+                <IoLockClosed className='icon' />
                 <input type="password" required/>
                 <label>Contraseña</label>
             </div>
@@ -29,7 +32,7 @@ const LoginForm = () => {
             </div>
             <button type='submit'>Acceder</button>
             <div className="register-link">
-                <p>No tiene una cuenta?<a href="#">Registrarse</a></p>
+                <p>Cooperativa 8 de Marzo Ltda.</p>
             </div>
         </form>
     </div>
