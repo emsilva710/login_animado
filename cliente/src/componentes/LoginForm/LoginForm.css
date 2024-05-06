@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-body {
+.login-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ body {
     position: relative;
     width: 320px;
     margin: 30px 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #3b3b3b;
 }
 
 .input-box label {
@@ -38,7 +38,7 @@ body {
     transform: translateY(-50%);
     font-size: 1.5em;
     pointer-events: none;
-    color: #fff;
+    color: #3c3c3c;
     transition: .5s;
 }
 
@@ -54,7 +54,7 @@ body {
     border: none;
     outline: none;
     font-size: 1.1em;
-    color: #fff;
+    color: #313131;
     padding: 20px 35px 0 5px;
 }
 
@@ -62,7 +62,7 @@ body {
     top: 15px;
     position: absolute;
     right: 8px;
-    color: #fff;
+    color: #2a2a2a;
     font-size: 1.2em;
     line-height: 57px;
 }
@@ -149,13 +149,15 @@ button:hover {
 
 .logo {
     position: absolute;
-    bottom: 355px;
-    right: 625px;
-    background-image: url(http://localhost:3000/static/media/logo.6f47c1f95f8d3710f100.png);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%); /* Center the image */
+    background-image: url(../Assets/logo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 300px;
     height: 300px;
+    margin: auto;
 }
 
